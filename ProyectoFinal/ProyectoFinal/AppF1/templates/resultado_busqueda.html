@@ -1,0 +1,11 @@
+<p>Estamos buscando la nacionalidad de: {{ nombre }}</p>
+
+{% if piloto_encontrado %}
+
+<ul>
+{% for piloto in piloto_encontrado %}
+    <li>{{piloto.nacionalidad}} (nombre {{piloto.nombre}})</li>
+{% endfor %}
+</ul>
+
+{% endif %}
